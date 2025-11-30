@@ -199,11 +199,9 @@
     padding-right: 16px;
   }
   .header {
-    background-image: url(img/Star-telephon-35px.svg), url(img/star-telephone-21px.svg), url(img/star-telrphone.svg), url(img/Star-telephone-18px.svg), url(img/Star-telephone-38px.svg);
+    background-image: url(img/star1m.svg), url(img/star2m.svg), url(img/star3m.svg), url(img/star4m.svg), url(img/star5m.svg);
     background-repeat: no-repeat;
-    background-position: 37px 97px, 91px 64px, 215px -80px, 272px 557px, 303px 580px;
-    padding-top: 147px;
-    padding-bottom: 131px;
+    background-position: 37px 97px, 91px 64px, 273px 557px, 304px 580px, 290px 40px;
     display: flex;
     justify-content: center;
   }
@@ -211,5 +209,50 @@
     width: 343px;
     gap: 36px;
     align-items: center;
+  }
+  .header__box {
+    max-width: 296px;
+    align-items: center;
+  }
+  .header__title {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .header__subtitle {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .header__button {
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding-left: 103.5px;
+    padding-right: 103.5px;
+  }
+  .text__content {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .text__title {
+    font-size: 16px;
+  }
+  .games {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
