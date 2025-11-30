@@ -191,4 +191,25 @@
   line-height: 100%;
   letter-spacing: 0px;
   text-align: left;
+}
+
+@media (max-width: 833px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    background-image: url(img/Star-telephon-35px.svg), url(img/star-telephone-21px.svg), url(img/star-telrphone.svg), url(img/Star-telephone-18px.svg), url(img/Star-telephone-38px.svg);
+    background-repeat: no-repeat;
+    background-position: 37px 97px, 91px 64px, 215px -80px, 272px 557px, 303px 580px;
+    padding-top: 147px;
+    padding-bottom: 131px;
+    display: flex;
+    justify-content: center;
+  }
+  .header__content {
+    width: 343px;
+    gap: 36px;
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */
