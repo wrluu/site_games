@@ -73,12 +73,28 @@
         background-color: transparent;
     }
 }
-
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 .text {
     background-color: #BCEC30;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 27px 0;
+    box-sizing: border-box;
     &__content {
-        padding-bottom: 30px;
-        padding-top: 27px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 51px;
+        animation: scroll 30s linear infinite;
     }
     &__title {
         color: rgba(32, 32, 39, 1);
