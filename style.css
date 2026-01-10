@@ -495,8 +495,8 @@
     width: auto;
   }
   .card-mini__content {
-    height: 300px;
-    width: 720px;
+    height: auto;
+    width: auto;
   }
   .card-mini__button {
     display: flex;
@@ -514,6 +514,9 @@
     border-radius: 60px;
     background: rgb(32, 32, 39);
     text-decoration: none;
+  }
+  .card-mini__button:hover {
+    background-color: inherit;
   }
 }
 @media (max-width: 833px) {

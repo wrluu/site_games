@@ -71,3 +71,47 @@ function startGame2() {
         }
     }
 }
+
+function startGame3() {
+    const userText = prompt("Введите текст, который нужно перевернуть:");
+    if (userText !== null) {
+        const reversedText = userText.split('').reverse().join('');
+        alert(`Перевернутый текст: ${reversedText}`);
+    } else {
+        alert("Вы отменили ввод.");
+    }
+}
+
+function startGame4() {
+    const choices = ['камень', 'ножницы', 'бумага'];
+
+    while (true) {
+        const userChoiceIndex = parseInt(prompt(
+            "Выберите:\n1. Камень\n2. Ножницы\n3. Бумага\nВведите номер вашего выбора (1, 2 или 3):"
+        )) - 1;
+
+        if (userChoiceIndex === null || isNaN(userChoiceIndex) || userChoiceIndex < 0 || userChoiceIndex > 2) {
+            alert("Игра завершена.");
+            break;
+        }
+
+        const userChoice = choices[userChoiceIndex];
+        const computerChoiceIndex = Math.floor(Math.random() * 3);
+        const computerChoice = choices[computerChoiceIndex];
+
+        alert(`Вы выбрали: ${userChoice}\nКомпьютер выбрал: ${computerChoice}`);
+
+        if (userChoice === computerChoice) {
+            alert("Ничья! Попробуйте ещё раз.");
+        } else if (
+            (userChoice === 'камень' && computerChoice === 'ножницы') ||
+            (userChoice === 'ножницы' && computerChoice === 'бумага') ||
+            (userChoice === 'бумага' && computerChoice === 'камень')
+        ) {
+            alert("Вы выиграли!");
+            break;
+        } else {
+            alert("Вы проиграли! Попробуйте ещё раз.");
+        }
+    }
+}
