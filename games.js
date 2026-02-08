@@ -115,3 +115,64 @@ function startGame4() {
         }
     }
 }
+
+function startGame5() {
+    const quiz = [
+        {
+            question: "Какой цвет небо?",
+            options: ["1. Красный", "2. Синий", "3. Зеленый"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько дней в неделе?",
+            options: ["1. Шесть", "2. Семь", "3. Восемь"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько у человека пальцев на одной руке?",
+            options: ["1. Четыре", "2. Пять", "3. Шесть"],
+            correctAnswer: 2
+        }
+    ];
+
+    let correctAnswersCount = 0;
+
+    for (const item of quiz) {
+        const userAnswer = prompt(`${item.question}\n${item.options.join('\n')}\nВведите номер правильного ответа:`);
+
+        if (userAnswer === null) {
+            alert("Вы отменили викторину.");
+            return;
+        }
+
+        const answerNumber = parseInt(userAnswer);
+
+        if (answerNumber === item.correctAnswer) {
+            correctAnswersCount++;
+        }
+    }
+
+    alert(`Вы правильно ответили на ${correctAnswersCount} из ${quiz.length} вопросов!`);
+}
+
+function startGame6(event) {
+    if (event) {
+        event.preventDefault();
+    }
+
+    function getRandomColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+    const randomColor = getRandomColor();
+
+    document.querySelector('.games').style.backgroundColor = randomColor;
+    document.querySelector('.minigames').style.backgroundColor = randomColor;
+
+    console.log(`Цвет фона изменен на: ${randomColor}`);
+}

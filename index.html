@@ -59,48 +59,60 @@
                     <div class="card">
                         <div class="card-top">
                             <article class="card__content">
-                                <img src="img/card1.png" class="card__img" alt="Изображение Игры №1">
-                                <div class="card__box">
-                                    <p  class="card__number">Игра №1</p>
-                                    <p class="card__title">Угадай число</p>
-                                </div>
+                                <a href="#game-1">
+                                    <img src="img/card1.png" class="card__img" alt="Изображение Игры №1">
+                                    <div class="card__box">
+                                        <p class="card__number">Игра №1</p>
+                                        <p class="card__title">Угадай число</p>
+                                    </div>
+                                </a>
                             </article>
                             <article class="card__content">
-                                <img src="img/card2.png" class="card__img" alt="Изображение Игры №2">
-                                <div class="card__box">
-                                    <p  class="card__number">Игра №2</p>
-                                    <p class="card__title">Простая<br>арифметика</p>
-                                </div>
+                                <a href="#game-2">
+                                    <img src="img/card2.png" class="card__img" alt="Изображение Игры №2">
+                                    <div class="card__box">
+                                        <p class="card__number">Игра №2</p>
+                                        <p class="card__title">Простая<br>арифметика</p>
+                                    </div>
+                                </a>
                             </article>
                             <article class="card__content">
-                                <img src="img/card3.png" class="card__img" alt="Изображение Игры №3">
-                                <div class="card__box">
-                                    <p  class="card__number">Игра №3</p>
-                                    <p class="card__title">Переверни текст</p>
-                                </div>
+                                <a href="#game-3">
+                                    <img src="img/card3.png" class="card__img" alt="Изображение Игры №3">
+                                    <div class="card__box">
+                                        <p class="card__number">Игра №3</p>
+                                        <p class="card__title">Переверни текст</p>
+                                    </div>
+                                </a>
                             </article>
                         </div>
                         <div class="card-bottom">
                             <article class="card__content">
-                                <img src="img/card4.png" class="card__img" alt="Изображение Игры №4">
-                                <div class="card__box">
-                                    <p  class="card__number">Игра №4</p>
-                                    <h1 class="card__title">Камень,<br>ножницы,<br>бумага</h1>
-                                </div>
+                                <a href="#game-4">
+                                    <img src="img/card4.png" class="card__img" alt="Изображение Игры №4">
+                                    <div class="card__box">
+                                        <p class="card__number">Игра №4</p>
+                                        <p class="card__title">Камень,<br>ножницы,<br>бумага</p> <!-- Изменено с h1 на p -->
+                                    </div>
+                                </a>
                             </article>
                             <article class="card__content">
-                                <img src="img/card5.png" class="card__img" alt="Изображение Игры №5">
-                                <div class="card__box">
-                                    <p  class="card__number">Игра №5</p>
-                                    <p class="card__title">Простая<br>викторина</p>
-                                </div>
+                                <a href="#game-5">
+                                    <img src="img/card5.png" class="card__img" alt="Изображение Игры №5">
+                                    <div class="card__box">
+                                        <p class="card__number">Игра №5</p>
+                                        <p class="card__title">Простая<br>викторина</p>
+                                    </div>
+                                </a>
                             </article>
                             <article class="card__content">
-                                <img src="img/card6.png" class="card__img" alt="Изображение Игры №6">
-                                <div class="card__box">
-                                    <p  class="card__number">Игра №6</p>
-                                    <p class="card__title">Генератор<br>случайных<br>цветов</p>
-                                </div>
+                                <a href="#game-6">
+                                    <img src="img/card6.png" class="card__img" alt="Изображение Игры №6">
+                                    <div class="card__box">
+                                        <p class="card__number">Игра №6</p>
+                                        <p class="card__title">Генератор<br>случайных<br>цветов</p>
+                                    </div>
+                                </a>
                             </article>
                         </div>
                     </div>
@@ -114,7 +126,7 @@
                 <p class="minigames__title">Мини-игры</p>
                 <div class="minigames__card-item">
                     <div class="card-mini">
-                        <article class="card-mini__content reverse">
+                        <article id="game-1" class="card-mini__content reverse">
                             <img src="img/mini_card1.png" class="card-mini__img" alt="Изображение Игры Угадай число">
                             <div class="card-mini__box">
                                 <p class="card-mini__title">Угадай число</p>
@@ -122,7 +134,7 @@
                                 <a href="#" class="card-mini__button" onclick="startGame1()">Играть!</a>
                             </div>
                         </article>
-                        <article class="card-mini__content">
+                        <article id="game-2" class="card-mini__content">
                             <img src="img/mini_card2.png" class="card-mini__img" alt="Изображение Игры Простая арифметика">
                             <div class="card-mini__box">
                                 <p class="card-mini__title">Простая арифметика</p>
@@ -130,7 +142,7 @@
                                 <a href="#" class="card-mini__button" onclick="startGame2()">Играть!</a>
                             </div>
                         </article>
-                        <article class="card-mini__content reverse">
+                        <article id="game-3" class="card-mini__content reverse">
                             <img src="img/mini_card3.png" class="card-mini__img" alt="Изображение Игры Переверни текст">
                             <div class="card-mini__box">
                                 <p class="card-mini__title">Переверни текст</p>
@@ -138,7 +150,7 @@
                                 <a href="#" class="card-mini__button" onclick="startGame3()">Играть!</a>
                             </div>
                         </article>
-                        <article class="card-mini__content">
+                        <article id="game-4" class="card-mini__content">
                             <img src="img/mini_card4.png" class="card-mini__img" alt="Изображение Игры Камень, ножницы, бумага">
                             <div class="card-mini__box">
                                 <p class="card-mini__title">Камень,<br>ножницы,<br>бумага</p>
@@ -146,20 +158,20 @@
                                 <a href="#" class="card-mini__button" onclick="startGame4()">Играть!</a>
                             </div>
                         </article>
-                        <article class="card-mini__content reverse">
+                        <article id="game-5" class="card-mini__content reverse">
                             <img src="img/mini_card5.png" class="card-mini__img" alt="Изображение Игры Простая викторина">
                             <div class="card-mini__box">
                                 <p class="card-mini__title">Простая викторина</p>
                                 <p class="card-mini__subtitle">Отвечай на вопросы викторины c вариантами ответов.</p>
-                                <a href="#" class="card-mini__button ">Играть!</a>
+                                <a href="#" class="card-mini__button" onclick="startGame5()">Играть!</a>
                             </div>
                         </article>
-                        <article class="card-mini__content">
+                        <article id="game-6" class="card-mini__content">
                             <img src="img/mini_card6.png" class="card-mini__img" alt="Изображение Игры Угадай число">
                             <div class="card-mini__box">
                                 <p class="card-mini__title">Генератор случайных<br>цветов</p>
                                 <p class="card-mini__subtitle">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
-                                <a href="#" class="card-mini__button">Играть!</a>
+                                <a href="#" class="card-mini__button" onclick="startGame6(event)">Играть!</a>
                             </div>
                         </article>
                     </div>
